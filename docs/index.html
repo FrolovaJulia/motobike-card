@@ -13,7 +13,7 @@
   <body>
     <div class="card">
       <div class="card-img-wrapper">
-        <img class="card-img" src="./img/motorcycle-big.png" alt="Motorcycle" />
+        <img class="card-img" src="./img/motorcycle/yellow.png" alt="Motorcycle" />
       </div>
 
       <div class="card-content-wrapper">
@@ -27,10 +27,10 @@
         <div class="card-details-wrapper">
           <div class="card-label">Цвета</div>
 
-          <div class="card-colors-wrapper">
-            <button class="card-color card-color-yellow card-color-active"></button>
-            <button class="card-color card-color-red"></button>
-            <button class="card-color card-color-grey"></button>
+          <div id="card-colors-wrapper" class="card-colors-wrapper">
+            <button class="card-color card-color-yellow" data-filter="yellow"></button>
+            <button class="card-color card-color-green" data-filter="green"></button>
+            <button class="card-color card-color-pink" data-filter="pink"></button>
           </div>
         </div>
 
@@ -55,5 +55,7 @@
         </div>
       </div>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
