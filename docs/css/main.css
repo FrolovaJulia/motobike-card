@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #dce2e6;
+  height: 100%;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: 0px;
+  padding: 0;
+  background-color: transparent;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  padding-top: 44px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+
+  width: 980px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 55px 0px rgba(181, 196, 206, 1);
+}
+
+.card-img-wrapper {
+}
+
+.card-img {
+  position: absolute;
+  left: -192px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  max-width: initial;
+}
+
+.card-content-wrapper {
+  float: right;
+
+  width: 441px;
+}
+
+.card-title {
+  margin-bottom: 26px;
+
+  font-weight: 500;
+  color: #000;
+  font-size: 38px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.card-details-wrapper {
+  margin-bottom: 31px;
+}
+
+.card-label {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  line-height: 1;
+  color: #bfc5c8;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card-price {
+  font-size: 24px;
+  line-height: 1;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-colors-wrapper {
+  margin-top: 14px;
+}
+
+.card-colors-wrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-color {
+  display: block;
+  float: left;
+  margin-right: 8px;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+}
+
+.card-color-yellow {
+  background-color: #f5cb2e;
+  background: linear-gradient(
+    135deg,
+    rgba(254, 246, 118, 1) 0%,
+    rgba(237, 182, 29, 1) 100%
+  );
+}
+
+.card-color-red {
+  background-color: #d70909;
+  background: linear-gradient(
+    135deg,
+    rgba(239, 31, 31) 0%,
+    rgba(191, 12, 12) 100%
+  );
+}
+
+.card-color-grey {
+  background-color: #909090;
+  background: linear-gradient(
+    135deg,
+    rgba(165, 165, 165) 0%,
+    rgba(115, 115, 115) 100%
+  );
+}
+
+.card-color-active {
+  border: 4px solid #393939;
+}
+
+.card-text {
+  margin-bottom: 39px;
+  margin-top: 34px;
+
+  color: #6c757f;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-text p {
+  margin-bottom: 18px;
+  line-height: 1.27;
+}
+
+.card-button-wrapper {
+}
+
+.card-button-wrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button-primary {
+  float: left;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  height: 68px;
+
+  border-radius: 4px;
+  background-color: #ffd01e;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 66px;
+  color: #000;
+
+  transition: .3s;
+}
+
+.button-primary:hover {
+  background-color: rgba(255, 208, 30, 0.9);
+}
+
+.button-outline {
+  display: inline-block;
+  float: left;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  height: 68px;
+
+  border: 3px solid #545454;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 62px;
+  color: #545454;
+
+  transition: .3s;
+}
+
+.button-outline:hover {
+  color: rgba(84, 84, 84, 0.8);
+  border: 3px solid rgba(84, 84, 84, 0.8);
+}
